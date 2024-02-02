@@ -1,8 +1,15 @@
 class Solution:
     def findTheDifference(self, s: str, t: str) -> str:
-        t = list(t)
+        dic = {}
         for c in s:
-            t.remove(c)
+            if c in dic:
+                dic[c] += 1
+            else:
+                dic[c] = 1
         
-        return ''.join(t)
-        
+        for c in t:
+            if c in dic:
+                if dic[c] == 0: return c
+                dic[c] -= 1
+            else:
+                return c        
