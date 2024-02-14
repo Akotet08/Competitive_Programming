@@ -2,8 +2,8 @@ class Solution:
     def reverseWords(self, s: str) -> str:
         words = ''
         i = 0
-        while i < len(s) and s[i] == ' ':
-            i += 1
+        
+        s = s.strip()
         
         while i < len(s):
             j = i+1
