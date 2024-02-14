@@ -1,6 +1,6 @@
 class Solution:
     def reverseWords(self, s: str) -> str:
-        lst = []
+        words = ''
         i = 0
         while i < len(s) and s[i] == ' ':
             i += 1
@@ -10,12 +10,12 @@ class Solution:
             while j < len(s) and s[j] != ' ': 
                 j += 1
             
-            lst.insert(0, s[i: j])
+            words = s[i:j] + ' ' + words
 
             i = j
             while i < len(s) and s[i] == ' ':
                 i+=1
 
-        return ' '.join(lst)
+        return words.strip()
             
 
