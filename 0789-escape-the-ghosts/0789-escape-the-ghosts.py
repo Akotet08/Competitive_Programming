@@ -6,15 +6,12 @@ class Solution:
         for ghost in ghosts:
             gx, gy = ghost
 
-            dis = sum([abs(tx-gx), abs(ty-gy)])
+            dis = abs(tx-gx) + abs(ty-gy)
 
             if dis <  clst_ghost:
                 clst_ghost = dis
         
         d = abs(tx) + abs(ty)
-
-        print(clst_ghost, d)
-
         return clst_ghost > d
    
         
