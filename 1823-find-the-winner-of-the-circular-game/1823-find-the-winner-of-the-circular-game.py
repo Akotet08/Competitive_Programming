@@ -7,6 +7,7 @@ class Solution:
             lst.remove(lst[idx])
         
         return lst[0]
+            
  
 
 
