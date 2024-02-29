@@ -9,7 +9,6 @@ class Solution:
                     self.reverse(arr, k)
                     self.reverse(arr, i)
 
-                    print(k, mxele)
                     mxele -= 1
 
                     lst.append(k + 1)
@@ -22,7 +21,6 @@ class Solution:
         mid = (idx + 1) // 2
         for i in range(mid):
             arr[i], arr[idx - i] = arr[idx - i], arr[i]
-        print(idx, arr)
 
 
 
