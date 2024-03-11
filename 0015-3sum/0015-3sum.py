@@ -5,7 +5,7 @@ class Solution:
         lst = set()
         for i in range(len(nums)):
             if nums[i] > 0:
-                continue
+                break
 
             j = i + 1
             k = len(nums) - 1
@@ -27,7 +27,7 @@ class Solution:
                     j += 1
                     k -= 1
         
-        return [list(ele) for ele in lst]
+        return list(lst)
 
 
             
