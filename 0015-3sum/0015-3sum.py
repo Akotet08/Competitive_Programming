@@ -4,6 +4,9 @@ class Solution:
 
         lst = set()
         for i in range(len(nums)):
+            if nums[i] > 0:
+                continue
+
             j = i + 1
             k = len(nums) - 1
 
