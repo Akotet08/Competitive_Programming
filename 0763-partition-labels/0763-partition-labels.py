@@ -8,7 +8,6 @@ class Solution:
             else:
                 dic[char] = [i, i] 
 
-        print(dic)
         partitions = []
         cur_start, cur_end = list(dic.values())[0]
         for start, end in dic.values():
