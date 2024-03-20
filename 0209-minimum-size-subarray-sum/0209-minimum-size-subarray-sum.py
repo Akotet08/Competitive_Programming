@@ -5,15 +5,13 @@ class Solution:
         s = 0
         r = float('inf')
 
-        while i < len(nums):
+        for i in range(len(nums)):
             s += nums[i]
             while s >= target:
                 r = min(r, i - j + 1)
                 s -= nums[j]
                 j += 1
 
-            i += 1
-        
         if r == float('inf'): return 0
         return r
 
