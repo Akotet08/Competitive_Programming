@@ -1,9 +1,8 @@
 class Solution:
     def minSubArrayLen(self, target: int, nums: List[int]) -> int:
-        i = 0
         j = 0
         s = 0
-        r = math.inf
+        r = float('inf')
 
         for i in range(len(nums)):
             s += nums[i]
@@ -12,8 +11,8 @@ class Solution:
                 s -= nums[j]
                 j += 1
 
-        if r == math.inf: return 0
-        return r
+        return 0 if r == float('inf') else r
+        # return r
 
             
 
