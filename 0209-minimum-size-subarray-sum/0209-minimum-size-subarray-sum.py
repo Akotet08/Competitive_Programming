@@ -3,7 +3,7 @@ class Solution:
         i = 0
         j = 0
         s = 0
-        r = float('inf')
+        r = math.inf
 
         for i in range(len(nums)):
             s += nums[i]
@@ -12,7 +12,7 @@ class Solution:
                 s -= nums[j]
                 j += 1
 
-        if r == float('inf'): return 0
+        if r == math.inf: return 0
         return r
 
             
