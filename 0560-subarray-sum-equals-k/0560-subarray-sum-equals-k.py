@@ -9,9 +9,6 @@ class Solution:
         
         sum_set = Counter()
         count = 0
-
-        print(prefix_sum)
-
         for ele in prefix_sum:
             if ele == k:
                 count += 1
