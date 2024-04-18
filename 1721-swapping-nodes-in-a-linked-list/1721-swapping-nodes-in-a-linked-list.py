@@ -14,9 +14,7 @@ class Solution:
 
         first = head
         second = head
-
-        print(size)
-
+        
         for _ in range(k-1):
             first = first.next
         
